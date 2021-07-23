@@ -1,7 +1,26 @@
 baseURL: "https://chuck-alt-delete.github.io/"
 #languageCode: "en-us"
-title: "My New Hugo Site"
 theme: "PaperMod"
 
 params:
   ShowCodeCopyButtons: true
+  ShowShareButtons: true
+  profileMode:
+      enabled: true
+      title: "Chuck Alt Delete" # optional default will be site title
+      subtitle: "Chuck Larrieu Casias, learning out loud"
+      imageUrl: "https://media-exp1.licdn.com/dms/image/C5603AQEllqS9rcWhfQ/profile-displayphoto-shrink_800_800/0/1552964196186?e=1632355200&v=beta&t=jKa3d6cuzifHhEVRkLnkvRC3J2du6um5s0bIqp5Qm2M" # optional
+      imageTitle: "headshot" # optional
+      imageWidth: 120 # custom size
+      imageHeight: 120 # custom size
+      buttons:
+          - name: Archive
+            url: "/archive"
+
+  socialIcons: # optional
+      - name: "Twitter"
+        url: "https://twitter.com/MrLarrieu"
+      - name: "GitHub"
+        url: "https://github.com/chuck-alt-delete"
+      - name: "LinkedIn"
+        url: "https://www.linkedin.com/in/charles-larrieu-casias/"
