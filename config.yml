@@ -1,3 +1,4 @@
+title: "Home"
 baseURL: "https://chuck-alt-delete.github.io/"
 #languageCode: "en-us"
 theme: "PaperMod"
@@ -14,8 +15,10 @@ params:
       imageWidth: 120 # custom size
       imageHeight: 120 # custom size
       buttons:
-          - name: Archive
-            url: "/archive"
+          - name: Posts
+            url: "/posts"
+          - name: Portfolio
+            url: "/posts/portfolio"
 
   socialIcons: # optional
       - name: "Twitter"
@@ -24,3 +27,18 @@ params:
         url: "https://github.com/chuck-alt-delete"
       - name: "LinkedIn"
         url: "https://www.linkedin.com/in/charles-larrieu-casias/"
+
+
+# search
+languages:
+  en:
+    menu:
+      main:
+        - name: Search
+          url: "/search"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
