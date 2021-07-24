@@ -4,6 +4,10 @@ baseURL: "https://chuck-alt-delete.github.io/"
 theme: "PaperMod"
 
 params:
+  env: production
+  keywords: [blog, portfolio, data science, data, software, engineering]
+  ShowBreadCrumbs: true
+  ShowTOC: true
   ShowCodeCopyButtons: true
   ShowShareButtons: true
   profileMode:
@@ -15,8 +19,8 @@ params:
       imageWidth: 120 # custom size
       imageHeight: 120 # custom size
       buttons:
-          - name: Posts
-            url: "/posts"
+          - name: Blog
+            url: "/blog"
           - name: Portfolio
             url: "/posts/portfolio"
 

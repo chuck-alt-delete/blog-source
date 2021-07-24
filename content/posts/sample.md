@@ -1,8 +1,3 @@
----
-ShowToc: true
-draft: false
----
-
 # Sample Post
 
 Here is a sample post
