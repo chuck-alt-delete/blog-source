@@ -13,9 +13,9 @@ hugo
 echo "push content to github pages site"
 
 pushd public
-gitPush()
+gitPush
 popd
 
 echo "push blog source"
 
-gitPush()
+gitPush
