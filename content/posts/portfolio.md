@@ -10,14 +10,14 @@ Most of my work these last few years has lived in private repositories, so I've 
 
 As a Senior Curriculum Developer at [Confluent](https://www.confluent.io), I have written many courses related distributed systems, databases, and stream processing. Most of my courses are only available as a part of a paid subscription, but there are a couple of free samples you can check out. Go to the [Confluent training website](https://training.confluent.io/self-userpackage) and check out:
 
-- Automate Deployment with Confluent for Kubernetes
+- **Automate Deployment with Confluent for Kubernetes**
   - Whole course is free, including fully managed hands-on labs
   - Labs are available on GitHub at https://github.com/confluentinc/confluent-kubernetes-examples
   - In particular, I contributed heavily to:
     - [Configure external access with host-based routing](https://github.com/confluentinc/confluent-kubernetes-examples/tree/master/networking/external-access-static-host-based)
     - [Production grade security](https://github.com/confluentinc/confluent-kubernetes-examples/tree/master/security/production-secure-deploy)
   - See my [merged pull requests](https://github.com/confluentinc/operator-earlyaccess/pulls?q=is%3Apr+is%3Aclosed+author%3Achuck-confluent) for details
-- Try It - Create an Event Streaming App with ksqlDB
+- **Try It - Create an Event Streaming App with ksqlDB**
   - First couple of modules are free
 
 ## Chuckinator0 GitHub
