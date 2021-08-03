@@ -169,15 +169,15 @@ This query takes a given game ID and looks up all the users in that game. Let's 
 
 Now that we have found the partition where game ID `abc123` lives, the next step is to use the sort key, `SK`, to grab all the users. We look up records in order from `:placeholder` to `:users`, which are further specified in the `ExpressionAttributeValues` parameter. The `:placeholder` expression corresponds to the string `#PLACEHOLDER#abc123` (type denoted by `S`). The expression `:users` corresponds to the string `USER$`.
 
-The `\#` symbol is 35 in ascii, and `$` is 36, so `USER$` is greater than all `USER#<USERNAME>` entries. That means this query will return, for example: 
+The `\#` symbol is 35 in ascii, and `$` is 36, so `USER$` is greater than all `USER#<USERNAME>` entries. That means this query will return the game followed by all the users in that game in ascending order by username. For example: 
 
-```
+{{< highlight python >}}
 {"GAME#abc123" : "#PLACEHOLDER#abc123"}
 {"GAME#abc123": "USER#myuser1"}
 {"GAME#abc123": "USER#myuser2"}
 {"GAME#abc123": "USER#myuser3"}
 ...
-```
+{{< /highlight >}}
 ====
 
 <<<
