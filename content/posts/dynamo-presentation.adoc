@@ -2,14 +2,12 @@
 title: "Learning DynamoDB"
 date: 2021-08-03T10:46:35-07:00
 draft: false
-image: /images/dynamo/notice-wonder-debrief.png
-thumbnail: /images/dynamo/notice-wonder-debrief.png
+image: "/images/dynamo/notice-wonder-debrief.png"
+thumbnail: "/images/dynamo/notice-wonder-debrief.png"
 ---
 
 = DynamoDB Presentation
 :imagesdir: /images/dynamo/
-:source-highlighter: rouge
-:icons: font
 
 <<<
 
@@ -150,8 +148,7 @@ Query multiple entities in one request to one table!
 
 Take a moment to think about what this query does:
 
-[source,python]
-----
+{{< highlight python >}}
 game_id = input("what game ID do you want to look up?")
 resp = dynamodb.query(
         TableName='battle-royale',
@@ -163,7 +160,7 @@ resp = dynamodb.query(
         },
         ScanIndexForward=True
     )
-----
+{{< /highlight >}}
 
 .sample response
 [%collapsible]
