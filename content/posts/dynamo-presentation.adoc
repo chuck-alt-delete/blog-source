@@ -2,6 +2,7 @@
 title: "Learning DynamoDB"
 date: 2021-08-03T10:46:35-07:00
 draft: false
+thumbnail: /images/dynamo/notice-wonder-debrief.png
 ---
 
 = DynamoDB Presentation
