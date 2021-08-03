@@ -7,6 +7,9 @@ params:
   env: production
   keywords: [blog, portfolio, data science, data, software, engineering]
   ShowBreadCrumbs: true
+  analytics:
+    google:
+      SiteVerificationTag: "G-S20RBCMJWE"
   ShowTOC: true
   ShowCodeCopyButtons: true
   ShowShareButtons: true
