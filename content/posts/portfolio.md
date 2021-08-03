@@ -5,6 +5,7 @@ draft: false
 ---
 
 
+
 Most of my work these last few years has lived in private repositories, so I've created this site to do more "learning in public." I will keep this page updated with exemplars of my work.
 
 ## Free Courses 

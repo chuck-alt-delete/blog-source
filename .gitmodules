@@ -1,0 +1,8 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:chuck-alt-delete/chuck-alt-delete.github.io.git
+	branch = main
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod
+	branch = master
