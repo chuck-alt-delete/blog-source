@@ -13,7 +13,7 @@ As a Senior Curriculum Developer at [Confluent](https://www.confluent.io), I hav
 
 - **Automate Deployment with Confluent for Kubernetes**
   - Whole course is free, including fully managed hands-on labs
-  - Labs are available on GitHub at https://github.com/confluentinc/confluent-kubernetes-examples
+  - Labs are available on GitHub at [https://github.com/confluentinc/confluent-kubernetes-examples](https://github.com/confluentinc/confluent-kubernetes-examples)
   - In particular, I contributed heavily to:
     - [Configure external access with host-based routing](https://github.com/confluentinc/confluent-kubernetes-examples/tree/master/networking/external-access-static-host-based)
     - [Production grade security](https://github.com/confluentinc/confluent-kubernetes-examples/tree/master/security/production-secure-deploy)
