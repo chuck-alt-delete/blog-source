@@ -86,44 +86,41 @@ Ansible is a tool written in Python. It is considered a best practice in Python 
 
 . Create a virtual environment called `testenv` located in the root of this repo.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 python3 -m venv ./testenv
-----
+{{< /highlight >}}
+
 +
 NOTE: The `-m` option specifies a module to run, which in this case is the `venv` module.
 
 . Activate the virtual environment.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 source ./testenv/bin/activate
-----
+{{< /highlight >}}
 +
 NOTE: The prompt should now show `(testenv)` to indicate that you are using the virtual environment. We can now use `python` and `pip` instead of `python3` and `pip3`, since the virtual environment was created with Python 3. You can verify this with `python --version`.
 
 . Update `pip`, the Python package manager
 +
-[source,bash]
-----
+{{< highlight bash >}}
 python -m pip install --upgrade pip
-----
+{{< /highlight >}}
 
 
 . Install Ansible with `pip`
 +
-[source,bash]
-----
+{{< highlight bash >}}
 python -m pip install ansible-core
-----
+{{< /highlight >}}
 
 . Install some required "collections" with `ansible-galaxy`, Ansible's own "package manager" of sorts.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-galaxy install -r requirements.yml && \
     ansible-galaxy collection list
-----
+{{< /highlight >}}
+
 +
 NOTE: Collections are public Ansible repositories available on Ansible Galaxy. In this case, the collections have already been installed for you.
 
@@ -134,10 +131,9 @@ This lab environment uses Docker Compose to simulate virtual machines running in
 
 . Inspect `docker-compose.yml` and create the hosts `host1.test.confluent` and `host2.test.confluent`.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 docker-compose up -d
-----
+{{< /highlight >}}
 +
 NOTE: The `-d` option means "detached", which means that server logs won't print to standard output.
 
@@ -164,32 +160,30 @@ Ansible uses *modules* to run programs on remote hosts. There are many modules b
 
 . Run the `ping` module against the hosts in the `atlanta` group.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible -m ping \
     -i hosts.yml \
     atlanta
-----
+{{< /highlight >}}
 +
 NOTE: You should see output from the host that responds with "pong"
 
 . Run the `ping` module against the hosts in the `boston` group.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible -m ping \
     -i hosts.yml \
     boston
-----
+{{< /highlight >}}
 
 . Run the `ping` module against all hosts.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible -m ping \
     -i hosts.yml \
     all
-----
+{{< /highlight >}}
+
 
 === Explore Playbooks
 
@@ -213,12 +207,11 @@ The third task uses the built-in yum module to install the Apache httpd webserve
 
 . Run the `playbook_atlanta.yml` playbook against the host inventory
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-playbook \
     playbook_atlanta.yml \
     -i hosts.yml
-----
+{{< /highlight >}}
 +
 NOTE: Notice the tasks only ran on hosts in the `atlanta` group, as specified in the playbook.
 
@@ -234,12 +227,11 @@ NOTE: Notice the tasks only ran on hosts in the `atlanta` group, as specified in
 
 . Run the `playbook_all.yml` playbook against the host inventory and notice what happens.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-playbook \
     playbook_all.yml \
     -i hosts.yml
-----
+{{< /highlight >}}
 
 
 === Set Group Variables with `group_vars` and Encrypt Secrets with Ansible Vault
@@ -252,21 +244,19 @@ It is common practice to use a `group_vars` directory to define variables for di
 
 . It is vital to encrypt sensitive credentials so they aren't exposed in source control. Use Ansible Vault to encrypt `vault.yml` using the password *confluent* when prompted.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-vault encrypt group_vars/atlanta/vault.yml
-----
+{{< /highlight >}}
 +
 NOTE: You should now see the contents of `vault.yml` have been encrypted. If you want to view the unencrypted contents, you can run `ansible-vault view group_vars/atlanta/vault.yml`.
 
 . Run `playbook_atlanta.yml` on the hosts again, using vault password *confluent*.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-playbook --ask-vault-pass \
     playbook_atlanta.yml \
     -i hosts.yml
-----
+{{< /highlight >}}
 +
 NOTE: Notice the tasks are able to access the encrypted variables. Note that it is not secure to use the `debug` module to view encrypted secrets in the task output. This was only done for demonstration purposes. If you want to suppress the output of certain tasks, you can set the built-in `no_log` variable to `True` on those tasks.
 
@@ -276,10 +266,9 @@ Playbooks can get crowded and hard to reason about. Ansible uses the concept of 
 
 . Create an Ansible role called `sample-role`.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-galaxy role init sample-role
-----
+{{< /highlight >}}
 
 . Take note of the folder structure and inspect some of the files. This will be discussed more in the activity debrief.
 
@@ -287,10 +276,9 @@ ansible-galaxy role init sample-role
 
 . Destroy your hosts.
 +
-[source,bash]
-----
+{{< highlight bash >}}
 docker-compose down
-----
+{{< /highlight >}}
 
 == Activity Debrief
 
@@ -409,12 +397,11 @@ This is just a brief overview. In later learning modules, you will look at roles
 
 . What do the different parts of this Ansible command do?
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible -m ping \
     -i hosts.yml \
     boston
-----
+{{< /highlight >}}
 +
 .sample response
 [%collapsible]
@@ -424,12 +411,11 @@ This command executes the `ping` module on hosts in the `boston` group of the `h
 
 . What do the different parts of this Ansible command do?
 +
-[source,bash]
-----
+{{< highlight bash >}}
 ansible-playbook \
     playbook_atlanta.yml \
     -i hosts.yml
-----
+{{< /highlight >}}
 +
 .sample response
 [%collapsible]
