@@ -16,7 +16,7 @@ thumbnail: "/images/ansible-docker/ansible-architecture.svg"
 
 This lab is modified from one of my courses over at https://training.confluent.io/self-userpackage[Confluent Education^]. The course is about using Confluent's Ansible playbooks, but I had so much fun setting up the lab environment that I thought others would too. This lab environment is cool because you can simulate your own Virtual Private Cloud locally using Ansible's Docker connection.
 
-The key to making this work is to use Jeff Geerling's `docker-<distro>-ansible` Docker images and mounting the `/sys/fs/cgroup` into the container. This allows the container to use `systemd`, making it behave like a VM you might have running in the cloud. Here's one of Jeff's https://hub.docker.com/r/geerlingguy/docker-ubuntu1804-ansible[ubuntu] image, for example.
+The key to making this work is to use Jeff Geerling's `docker-<distro>-ansible` Docker images and mounting the `/sys/fs/cgroup` into the container. This allows the container to use `systemd`, making it behave like a VM you might have running in the cloud. Here's one of Jeff's https://hub.docker.com/r/geerlingguy/docker-ubuntu1804-ansible[ubuntu] images, for example.
 
 Clone my https://github.com/chuck-alt-delete/ansible-docker[source repository^] and have fun with the lab!
 
