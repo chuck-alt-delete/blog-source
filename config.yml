@@ -17,10 +17,10 @@ params:
       enabled: true
       title: "Chuck Alt Delete" # optional default will be site title
       subtitle: "Chuck Larrieu Casias, learning in public"
-      imageUrl: "https://media-exp1.licdn.com/dms/image/C5603AQEllqS9rcWhfQ/profile-displayphoto-shrink_800_800/0/1552964196186?e=1632355200&v=beta&t=jKa3d6cuzifHhEVRkLnkvRC3J2du6um5s0bIqp5Qm2M" # optional
+      imageUrl: images/professional-headshot.JPG
       imageTitle: "headshot" # optional
       imageWidth: 120 # custom size
-      imageHeight: 120 # custom size
+      imageHeight: 180 # custom size
       buttons:
           - name: Blog
             url: "/blog"
