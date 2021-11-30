@@ -4,6 +4,7 @@ date: 2021-11-30T09:28:03-08:00
 draft: true
 cover:
     image: /images/technical-marketing/kafka-meme-1.jpg
+    thumbnail: /images/technical-marketing/kafka-meme-1.jpg
 ---
 
 I'm *really* excited to share that I'll be joining the technical marketing team at Confluent!

@@ -2,8 +2,9 @@
 title: "Fun with Ansible's Docker Connection"
 date: 2021-09-14T10:46:35-07:00
 draft: false
-image: "/images/ansible-docker/ansible-architecture.svg"
-thumbnail: "/images/ansible-docker/ansible-architecture.svg"
+cover:
+    image: "/images/ansible-docker/ansible-architecture.svg"
+    thumbnail: "/images/ansible-docker/ansible-architecture.svg"
 ---
 
 = Fun with Ansible's Docker Connection
