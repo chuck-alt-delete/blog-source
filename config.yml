@@ -23,7 +23,7 @@ params:
       imageHeight: 180 # custom size
       buttons:
           - name: Blog
-            url: "/blog"
+            url: "/posts"
           - name: Portfolio
             url: "/posts/portfolio"
 
