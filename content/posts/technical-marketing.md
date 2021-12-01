@@ -1,13 +1,13 @@
 ---
 title: "Technical Marketing at Confluent"
 date: 2021-11-30T09:28:03-08:00
-draft: true
+draft: false
 cover:
     image: /images/technical-marketing/kafka-meme-1.jpg
     thumbnail: /images/technical-marketing/kafka-meme-1.jpg
 ---
 
-I'm *really* excited to share that I'll be joining the technical marketing team at Confluent!
+I'm *really* excited to share that on Monday, December 6, I'll be joining the technical marketing team at Confluent!
 
 ## Goodbye, Curriculum Development
 
@@ -25,16 +25,18 @@ Reflecting on my time in curriculum development, here are a couple of things I'm
 * Created an [awesome Role Based Access Control course](https://training.confluent.io/learningpath/manage-access-to-confluent-platform-with-role-based-access-control)
   * This is probably where I learned the most. It's about Confluent RBAC, but it also faithfully follows all security best practices. I had to dive deep into security of every component in the system. It felt like I was a security consultant for a startup. The lab environment for this course ended up being reused for half a dozen other security courses.
 * Created a simple but [super important course about Kafka listeners](https://training.confluent.io/learningpath/configure-broker-listeners-to-separate-cluster-traffic)
-* Created an [awesome course about Confluent for Kubernetes](https://training.confluent.io/packagedetail/automate-deployment-with-confluent-for-kubernetes)
+* Created an [awesome course about Confluent for Kubernetes](https://training.confluent.io/packagedetail/automate-deployment-with-confluent-for-kubernetes) (FREE!)
 * Created an [awesome course about Ansible Playbooks for Confluent Platform](https://training.confluent.io/learningpath/automate-confluent-deployment-with-ansible)
 * Pioneered the use of [Gitpod](https://gitpod.io) at Confluent to create 1-click, hands-on experiences
   * For example, run [Confluent Platform Demo](https://docs.confluent.io/platform/current/tutorials/cp-demo/docs/on-prem.html#gitpod) in Gitpod
+* Learned a lot about the observability space and created a pretty sweet lab dedicated to Kafka client observability
+  * Check it out -- https://github.com/chuck-confluent/kafka-observability (and you can run it yourself in the browser with Gitpod!)
 
-I give special thanks to my colleagues Gabriel Schenker, Russ Sayers, and Dave Shook, from whom I've learned so much, and to my manager Shira Gotshalk, who has been an amazing advocate for the team and set us in a great direction.
+I want to thank the entire Confluent Educaton team for their support. In particular, I give special thanks to my colleagues Gabriel Schenker, Russ Sayers, and Dave Shook, from whom I've learned so much, and to my manager Shira Gotshalk, who has been an amazing advocate for the team and set us in a great direction.
 
 I can't share anything yet, but the Education team is working on some projects that will make reverberations throughout Confluent. It's sad to leave before these projects come to light, but I'm happy to have been a part of them, and I will cheer when they release!
 
-While I enjoyed my time in curriculum development, it was was time to move closer a little bit closer to the challenges that exist out in the market. I want to convince folks to dramatically improve their data infrastructure by setting their data in motion with Confluent products. Once I get them in the door, my friends in Professional Services and Education will make sure they succeed.
+While I enjoyed my work in curriculum development, it was was time to move closer to the challenges that exist out in the market. I want to convince folks to dramatically improve their data infrastructure by setting their data in motion with Confluent products. Once I get them in the door, my friends in Professional Services and Education will make sure they succeed.
 
 
 ## What is Technical Marketing?
@@ -51,7 +53,20 @@ I'm new to this, but from what I understand, technical marketing is about convin
 
 Confluent has an amazing Developer Experience (DevX) team that does something very similar to technical marketing. Our developer advocates also create demos, code examples, videos, blog posts, and presentations. The difference is in emphasis. Developer Experience is not primarily about selling products. It's about fostering community and making it easier for developers to learn and participate, with the hope that happy developers will someday translate to happy customers.
 
-As a technical marketing manager, I am ALL business. Where DevX focuses on making it fun and easy for developers to build event streaming apps, the technical marketing team will showcase enterprise features to convince executives and technical leaders to invest in next-generation data infrastructure.
+As a Technical Marketing Manager, I am ALL business. Where DevX focuses on making it fun and easy for developers to build event streaming apps, the technical marketing team convinces executives and technical leaders to invest in next-generation data infrastructure. We do this by creating specific examples of how Confluent products solve business problems. Here are a couple of really high quality examples from the technical marketing team:
+
+* [Blog: Accelerate Your Cloud Data Warehouse Migration and Modernization with Confluent](https://www.confluent.io/blog/simplify-cloud-data-warehouse-migrations-with-confluent-data-solutions/)
+  * [video demo](https://youtu.be/KD5reXjosbs)
+* [Blog: Messaging Modernization with Confluent](https://www.confluent.io/blog/modern-messaging-and-data-integration-with-confluent/)
+  * [github repo](https://github.com/confluentinc/pmm/tree/master/messaging-modernization)
+
+
+{{< note >}}
+By the way, if you're like me, you might find the title "Technical Marketing Manager" to be confusing. I'm not a people manager. I manage technical marketing content.
+{{< /note >}}
+
+
+## Promoting Confluent
 
 ![meme](/images/technical-marketing/kafka-meme-2.jpg)
 
