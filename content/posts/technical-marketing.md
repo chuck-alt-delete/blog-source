@@ -2,9 +2,9 @@
 title: "Technical Marketing at Confluent"
 date: 2021-11-30T09:28:03-08:00
 draft: false
-cover:
-    image: /images/technical-marketing/kafka-meme-1.jpg
-    thumbnail: /images/technical-marketing/kafka-meme-1.jpg
+# cover:
+#     image: /images/technical-marketing/kafka-meme-1.jpg
+#     thumbnail: /images/technical-marketing/kafka-meme-1.jpg
 ---
 
 I'm *really* excited to share that on Monday, December 6, I'll be joining the technical marketing team at Confluent!
@@ -49,7 +49,7 @@ I'm new to this, but from what I understand, technical marketing is about convin
 
 ## Technical Marketing at Confluent
 
-![meme](/images/technical-marketing/kafka-meme-1.jpg)
+<!-- ![meme](/images/technical-marketing/kafka-meme-1.jpg) -->
 
 Confluent has an amazing Developer Experience (DevX) team that does something very similar to technical marketing. Our developer advocates also create demos, code examples, videos, blog posts, and presentations. The difference is in emphasis. Developer Experience is not primarily about selling products. It's about fostering community and making it easier for developers to learn and participate, with the hope that happy developers will someday translate to happy customers.
 
@@ -68,7 +68,7 @@ By the way, if you're like me, you might find the title "Technical Marketing Man
 
 ## Promoting Confluent
 
-![meme](/images/technical-marketing/kafka-meme-2.jpg)
+<!-- ![meme](/images/technical-marketing/kafka-meme-2.jpg) -->
 
 The underlying technology is so good that our biggest competition is actually people running open source Apache Kafka themselves. That seems cheap at first, but I can assure you it is in fact very difficult to own and operate critical infrastructure like Kafka at enterprise scale. You end up hiring teams of expensive platform engineers to work full time on operations that don't directly add business value. At Confluent, we have the lion's share of Kafka expertise. We can run Kafka for you better and cheaper than you can run yourself, and we can support you better than anyone else can.
 
