@@ -3,8 +3,8 @@ title: "Technical Marketing at Confluent"
 date: 2021-11-30T09:28:03-08:00
 draft: false
 cover:
-    image: /images/technical-marketing/20200122-SVG-confluent_logo-logotype-denim.svg
-    thumbnail: /images/technical-marketing/20200122-SVG-confluent_logo-logotype-denim.svg
+    image: /images/technical-marketing/20200122-PNG-confluent_logo-logotype-denim.png
+    thumbnail: /images/technical-marketing/20200122-PNG-confluent_logo-logotype-denim.png
 ---
 
 I'm *really* excited to share that on Monday, December 6, I'll be joining the technical marketing team at Confluent!
