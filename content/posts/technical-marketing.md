@@ -2,9 +2,9 @@
 title: "Technical Marketing at Confluent"
 date: 2021-11-30T09:28:03-08:00
 draft: false
-# cover:
-#     image: /images/technical-marketing/kafka-meme-1.jpg
-#     thumbnail: /images/technical-marketing/kafka-meme-1.jpg
+cover:
+    image: /images/technical-marketing/20200122-SVG-confluent_logo-logotype-denim.svg
+    thumbnail: /images/technical-marketing/20200122-SVG-confluent_logo-logotype-denim.svg
 ---
 
 I'm *really* excited to share that on Monday, December 6, I'll be joining the technical marketing team at Confluent!
