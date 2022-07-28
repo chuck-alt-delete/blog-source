@@ -49,3 +49,23 @@ outputs:
     - HTML
     - RSS
     - JSON # is necessary
+
+security:
+  enableInlineShortcodes: false
+  exec:
+    allow:
+    - ^dart-sass-embedded$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+    - asciidoc
+    osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+  funcs:
+    getenv:
+    - ^HUGO_
+  http:
+    methods:
+    - (?i)GET|POST
+    urls:
+    - .*
