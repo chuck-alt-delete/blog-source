@@ -47,3 +47,12 @@ As a Senior Curriculum Developer at [Confluent](https://www.confluent.io), I hav
 
 - https://github.com/chuck-alt-delete
 - https://github.com/chuck-confluent
+
+## Coding Puzzles
+
+While I enjoy solving coding puzzles for fun, I have significant anxiety when doing these coding challenges in interview conditions under time pressure, and as a dad with young kids and a full time job, I can't grind these out in my free time anymore like I used to in order to prepare for new interviews. I may therefore opt out of such interview questions and direct interviewers to this section of my portfolio instead.
+
+Here are some links to dozens of data structure and algorithm style coding puzzles that I've done. I mostly like to do them in Python, but I'm conversant in Java, Go, and Javascript as well. Ask me to explain any of the solutions and I'll happily get into recursion, depth first search, breadth first search, topological sort, quicksort, mergesort, dynamic programming, regular expressions, hashmaps, arrays, trees, generators, minheaps, queues, stacks, functional programming, object oriented programming, whatever other nerdy things you'd like to talk about.
+
+- https://github.com/chuckinator0/Projects/tree/master/scripts
+- https://github.com/chuck-alt-delete/exercism/tree/main/python
