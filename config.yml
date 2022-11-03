@@ -36,6 +36,13 @@ params:
         url: "https://www.linkedin.com/in/charles-larrieu-casias/"
 
 
+# Allow raw html
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+
 # search
 languages:
   en:
