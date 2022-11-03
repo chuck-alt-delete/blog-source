@@ -105,4 +105,4 @@ The competitive landscape for databases is tough, so Materialize had better have
 
 ## Conclusion
 
-This is going to be fun! I can't wait to help folks solve cool problems with Materialize! If you liked this post, then consider following me on [Twitter](https://mobile.twitter.com/MrLarrieu) and LinkedIn, and consider sharing with the social media buttons below.
+This is going to be fun! I can't wait to help folks solve cool problems with Materialize! If you liked this post, then consider following me on [Twitter](https://twitter.com/MrLarrieu) and [LinkedIn](https://www.linkedin.com/in/charles-larrieu-casias/), and consider sharing with the social media buttons below.
