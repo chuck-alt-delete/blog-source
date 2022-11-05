@@ -8,11 +8,11 @@ Every so often, I decide to turn my life upside down. About a week ago, I made t
 
 <div align="center">{{< tweet user="MrLarrieu" id="1584594310585991168" >}}</div>
 
-But why? Why leave a great company (which, by the way, just beat expectations for the [6th consecutive quarter](https://investors.confluent.io/news-releases/news-release-details/confluent-announces-third-quarter-2022-financial-results), despite the recession)?
+But why leave a great company (which, by the way, just beat expectations for the [6th consecutive quarter](https://investors.confluent.io/news-releases/news-release-details/confluent-announces-third-quarter-2022-financial-results), despite the recession)?
 
-Why leave a manager and team that I love working with?
+Why leave a manager and team I love working with?
 
-There are two reasons:
+There are two main reasons:
 * It's a great time for me to take risks
 * It's a great time for me to expand my expertise by doing something new
 
@@ -24,8 +24,9 @@ I've had the privilege and support to take these kinds of risks several times in
 * Decided to become a high school math teacher ([my teaching site](http://mrlarrieu.weebly.com/) -- a trip down memory lane!)
 * Quit teaching to write math curriculum (see the [free curriculum](https://curriculum.illustrativemathematics.org/), taught to millions of students in the US)
 * Quit writing math curriculum to teach myself DevOps (see my [DevOps interview prep post]({{< ref "/posts/devops-interview.md" >}}))
+* Quit writing technical curriculum to become a [Technical Marketing Manager]({{< ref "/posts/technical-marketing.md" >}})
 
-And each time was a phase change in my life for the better. Through teaching, I became more kind and empathetic. Through writing curriculum, I became a more creative and clear communicator. Through my DevOps bootcamp, I learned resilience in the face of failure and how to align my technical skill with business value.
+And each time was a phase change in my life for the better. Through teaching, I became more kind and empathetic. Through writing curriculum, I became a more creative and clear communicator. Through my DevOps bootcamp, I learned resilience in the face of failure and how to align my technical skill with business value. Through technical marketing, I learned to listen closely to the user and speak to their needs.
 
 This next step is really no different. This risk not only has a potentially great financial upside, but also a virtually guaranteed upside in terms of the skills and experience I will gain.
 
@@ -37,7 +38,7 @@ When I write courses, I am often tempted to give one simple assignment:
 
 This is exactly how I've gained the technical skills I have now. I am nearly certain I learned more by **_creating_** each course than anyone who has taken that course has learned from me -- about Mathematics, the internals of distributed systems like Kubernetes and Apache® Kafka, programming, software architecture, data, all of it. This is because knowledge is generally not transferred from teacher to learner; rather, it is constructed by the learner (see [Constructivism](https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_education))).
 
-So far I have created labs, demos, and other technical content from the safety of the Ivory Tower. The next step in my professional journey is to create software systems alongside real customers in production (a.k.a use systems [in anger](https://english.stackexchange.com/questions/30939/is-used-in-anger-a-britishism-for-something)).
+So far I have created labs, demos, and other technical content from the safety of the Ivory Tower. "Production" for me has meant a live workshop, conference demo, or published article. The next step in my professional journey is to build mission-critical software systems alongside real customers in production.
 
 In addition to the technical challenge, I also look forward to the organizational challenge of helping to build a company from an early stage. My generalist nature and creativity lend themselves nicely to the unstructured atmosphere of an early startup. It's a fun and interesting challenge to build on ground that shifts beneath my feet.
 
@@ -58,7 +59,7 @@ Some other databases also offer incrementally updated views, but the key breakth
 As for the technical details, here are a couple of things that get me really excited about Materialize:
 
 * It's a database built on top of a **stream processing** engine called [Differential Dataflow](https://timelydataflow.github.io/differential-dataflow/), implemented in pure Rust for beastly performance.
-  * Unlike other stream processors like Flink and Kafka Streams, Differential Dataflow is designed specifically for the stream processing use case without borrowing from technologies originally created for batch or transactional workloads (see [Why not RocksDB for streaming storage?](https://materialize.com/blog/why-not-rocksdb/)).
+  * Unlike other stream processors like Flink and Kafka Streams, Differential Dataflow is designed specifically for stream processing workloads without borrowing from technologies originally created for batch or transactional workloads (see [Why not RocksDB for streaming storage?](https://materialize.com/blog/why-not-rocksdb/)).
   * Single threaded performance is insane. I found a [preliminary benchmark](https://github.com/TimelyDataflow/differential-dataflow/tree/master/tpchlike) that shows single digit to 10,000x single threaded performance improvements over Postgres and Spark on the TCP-H standard benchmark queries
   * The dataflows can scale horizontally as well.
 * It guarantees [strict serializability](https://fauna.com/blog/serializability-vs-strict-serializability-the-dirty-secret-of-database-isolation-levels)
@@ -73,11 +74,13 @@ The competitive landscape for databases is tough, so Materialize had better have
 * Confluent CEO Jay Kreps argued that [businesses are becoming software](https://www.confluent.io/blog/every-company-is-becoming-software/), meaning that software is taking more responsibility for making automatic business decisions.
   * With Materialize, stream processing applications can use the same frontend -> web server -> database architecture as traditional request/response applications to realize the promise of real-time, event-driven microservices that Jay describes without having to learn or operate a particular stream processing framework or library.
 * Materialize supports arbitrary queries from the SQL-92 standard, which means data teams don't have to learn a new flavor of SQL and don't even have to learn nuanced details about stream processing (e.g. Kafka topics, partitions, brokers, stream/table duality, co-partitioning, etc).
-* Materialize is essentially the best Postgres read replica ever, effortlessly serving even the most complex joins and aggregations, always up to date.
+* Materialize integrates with Kafka, so it plugs right in to the most successful data streaming platform in the world.
+* Materialize has first class change data capture (CDC) integration with Postgres, making it essentially the best Postgres read replica ever. It can effortlessly serve even the most complex joins and aggregations, always up to date.
   * This means teams can start with a Postgres monolith for simplicity and fast time to market, and then effortlessly add Materialize as they scale and move to real-time microservices and analytics.
   * Kafka will still continue to make sense as a central data streaming platform as more data needs to be shared amongst more systems, but it is no longer a hard prerequisite to build event-driven microservices.
+  * Over time, other first-class CDC integrations can be added (e.g. MySQL), further reducing friction for adoption (right now, you would have to use MySQL -> Debezium CDC -> Kafka -> Materialize).
 * Materialize has first class support for the universally beloved Data Build Tool `dbt`, giving it the potential to quickly turn existing ETL data pipelines into superior real-time data pipelines (see [docs example](https://materialize.com/docs/integrations/dbt/)).
-* While not trivial to operate as a managed service, the company is hyper-specialized on building and operating only Materialize.
+* While it's not trivial to operate Materialize as a managed service, the company is hyper-specialized on building and operating only Materialize.
   * Competitors are finding themselves operating multiple complex distributed technologies, requiring several different, specialized infrastructure teams.
 * Materialize's performance means it will effectively compete with other databases on cost, which bodes well in an economy with tightening IT budgets.
 
@@ -91,10 +94,10 @@ The competitive landscape for databases is tough, so Materialize had better have
 
 ### Questions I'm Curious to Research
 
-* How does ingestion from Kafka work? Does it use `librdkafka` Rust client? Can it scale beyond input partitions like the [Confluent Parallel Consumer](https://github.com/confluentinc/parallel-consumer)? Demo on that page shows 500 records/s for the vanilla consumer -> 20,000 records/s for the parallel consumer.
+* How does ingestion from Kafka work? Does it use `librdkafka` Rust client? Can it scale beyond input partitions like the [Confluent Parallel Consumer](https://github.com/confluentinc/parallel-consumer)? The demo on that page shows 500 records/s for the vanilla consumer -> 20,000 records/s for the parallel consumer. This is because the vanilla consumer processes records in a single thread while the parallel consumer processes records with multiple threads in parallel while allowing the user to choose ordering guarantee (slowest: partition based ordering, faster: key-based ordering, fastest: unordered).
 * Does Materialize require co-partitioning of input topics like Kafka Streams and Flink so that a given key from input topics always lands in the same stream processing task?
 * Given strong consistency, should folks avoid Materialize for use cases where lots of late-arriving data is expected (e.g. edge devices sending records under spotty network conditions)?
-* What's the story for selling and supporting on-prem Materialize deployments?
+* What's the story for selling and supporting on-prem Materialize deployments? I suspect having local, strongly consistent, real-time materialized views at the edge or on-prem would make for some interesting use cases!
 * How does Materialize perform outside of steady state stream processing workloads, like
   * Backfilling?
   * Bootstrapping?
