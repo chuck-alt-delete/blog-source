@@ -4,7 +4,7 @@ date: 2022-11-07T08:00:00-07:00
 draft: false
 ---
 
-Every so often, I decide to turn my life upside down. About a week ago, I made this announcement:
+Every so often, I decide to turn my life upside down. A bit over a week ago, I made this announcement:
 
 <div align="center">{{< tweet user="MrLarrieu" id="1584594310585991168" >}}</div>
 
@@ -28,7 +28,7 @@ I've had the privilege and support to take these kinds of risks several times in
 
 And each time was a phase change in my life for the better. Through teaching, I became more kind and empathetic. Through writing curriculum, I became a more creative and clear communicator. Through my DevOps bootcamp, I learned resilience in the face of failure and how to align my technical skill with business value. Through technical marketing, I learned to listen closely to the user and speak to their needs.
 
-This next step is really no different. This risk not only has a potentially great financial upside, but also a virtually guaranteed upside in terms of the skills and experience I will gain.
+This new role will have much to teach me as well. To be honest, I am a little intimidated; but I am also comforted by my history of taking on challenges like this.
 
 ## Doing Something New
 
