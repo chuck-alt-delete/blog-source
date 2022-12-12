@@ -22,9 +22,14 @@
     min-height: 0;
 }
 
+
 .note {
     border-color: olive;
     background-color: #f6fffe;
+}
+
+.dark .note {
+    background-color: var(--theme);
 }
 
 .note .title {
@@ -33,18 +38,26 @@
 }
 
 .tip {
-    border-color: blue;
+    border-color: rgb(66, 66, 251);
     background-color: #f6fcff;
 }
 
+.dark .tip {
+    background-color: var(--theme); 
+}
+
 .tip .title {
-    color: blue;
-    border-color: blue;
+    color: rgb(66, 66, 251);
+    border-color: rgb(66, 66, 251);
 }
 
 .warning {
     border-color: orange;
     background-color: #fffeec;
+}
+
+.dark .warning {
+    background-color: var(--theme);
 }
 
 .warning .title {
@@ -55,6 +68,10 @@
 .important {
     border-color: red;
     background-color: #fffbfb;
+}
+
+.dark .important {
+    background-color: var(--theme);
 }
 
 .important .title {
