@@ -4,7 +4,30 @@ date: 2021-07-23T18:54:05-07:00
 draft: false
 ---
 
-Most of my work these last few years has lived in private repositories, so I've created this site to do more "learning in public." I will keep this page updated with exemplars of my work.
+This page displays exemplars of my work.
+
+{{< note >}}
+Any of this content may have been modified or deleted since being recorded here.
+{{< /note >}}
+
+## Field Engineering Assets
+
+As a Field Engineer at Materialize, I help folks find success using Materialize, a Postgres-compatible operational data warehouse that incrementally materializes and serves even the most complex joins and aggregations, always up-to-date. Here are a couple of assets to highlight:
+
+- I wrote [When to Use Indexes and Materialized Views](https://materialize.com/blog/views-indexes/), which is the first and most highly emphasized resource we share with all new users. Sharing this post prevents a common scenario where users would query Materialize without indexes and leave with a bad impression about the product. This post has helped numerous customers find success with Materialize.
+- I wrote the joins section of our [optimization documentation](https://materialize.com/docs/transform-data/optimization/#join), which is critical to minimizing cost for our customers.
+- I wrote the [temporal filter documentation](https://materialize.com/docs/transform-data/patterns/temporal-filters/) to help customers learn how to continuously compute results over recent time windows, saving memory resources and boosting developer productivity.
+- I documented the solution for a common pattern called a [rules execution engine](https://materialize.com/docs/transform-data/patterns/rules-engine/).
+- I've contributed several GitHub repositories to demo Materialize or help customers with common needs.
+  - [datagen CLI](https://github.com/chuck-alt-delete/datagen) -- This tool has been key to creating demos and helping a few prospects run authentic proof-of-concept workloads without needing to complete complex security reviews first.
+  - [mz-auction-house](https://github.com/chuck-alt-delete/mz-auction-house) -- A full stack demo application to illustrate how to use Materialize as a real-time backend for complex alerting. I have since expanded this into one of our official demos, which unfortunately is in a private repository.
+  - [mz-sqlalchemy-example](https://github.com/chuck-alt-delete/mz-sqlalchemy-example) -- A best practice template for integrating Materialize with SQL Alchemy, a Python ORM.
+  - [dbtmz](https://github.com/chuck-alt-delete/dbtmz) -- A best practice template for integrating Materialize with `dbt`.
+  - [fastapi_psycopg3_example
+](https://github.com/chuck-alt-delete/fastapi_psycopg3_example) -- A best practice template for integrating Postgres (and, by protocol compatibility, Materialize) with Python FastAPI webserver framework.
+  - [nodejs-subscription](https://github.com/MaterializeInc/demos/issues/91) -- A best practice example for creating a Node application backed by Materialize's real-time `SUBSCRIBE` functionality.
+
+Outisde of these publicly available assets, I have several custom solutions I've built for specific customers as well as demos.
 
 ## Technical Marketing Assets
 
