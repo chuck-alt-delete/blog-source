@@ -2,7 +2,11 @@
 
 Source content for chuck-alt-delete.github.io.
 
-# Update submodules
+## Setup
+
+Install [Hugo](https://gohugo.io).
+
+## Update Submodules
 
 ```bash
 git submodule foreach git pull
@@ -13,6 +17,21 @@ Note: After pulling from a different computer, I had an issue with the submodule
     git clone https://github.com/chuck-alt-delete/chuck-alt-delete.github.io.git public
 
 That seemed to work.
+
+# New Post
+
+Create.
+
+```
+hugo new content/posts/<my-new-post>.md
+```
+
+Preview.
+
+```
+hugo serve
+```
+
 # Build and Publish to chuck-alt-delete.github.io
 
 ```

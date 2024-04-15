@@ -1,7 +1,7 @@
 title: "Chuck Alt Delete"
 baseURL: "https://chuck-alt-delete.github.io/"
 googleAnalytics: "G-S20RBCMJWE"
-theme: "PaperMod"
+theme: "hugo-PaperMod"
 
 params:
   env: production
