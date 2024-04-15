@@ -13,7 +13,7 @@ But I want to answer questions like “how has my usage/production been trending
 
 Well, here's the result!
 
-![](sunpower-viz/sunpower_avg_daily.png)
+![](/images/sunpower/sunpower_avg_daily.png)
 
 Go to the [GitHub repo](https://github.com/chuck-alt-delete/sunpower) to see:
 - Python functions for interacting with the MySunPower GraphQL API to download data locally
@@ -45,7 +45,8 @@ The token lasts a pretty long time, so this is probably sufficient.
 ### Environment setup
 
 Set up a Python virtual environment and install requirements.
-```
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -202,7 +203,7 @@ And go to http://localhost:9009.
 
 Rill also generated a dashboard using AI, which saved some time getting to a nice dashboard. For example, here is a year over year comparison of the month of January 2024 vs 2023 for total grid usage:
 
-![January 2024 (blue) vs 2023 (grey)](/images/sunpower/sunpower-viz/jan-2024-2023.png)
+![January 2024 (blue) vs 2023 (grey)](/images/sunpower/jan-2024-2023.png)
 
 A 15% reduction in grid usage year over year!
 
