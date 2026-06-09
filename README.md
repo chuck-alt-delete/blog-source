@@ -4,19 +4,25 @@ Source content for chuck-alt-delete.github.io.
 
 ## Setup
 
-Install [Hugo](https://gohugo.io).
+Install [Hugo](https://gohugo.io) and [asciidoctor](https://asciidoctor.org/).
 
-## Update Submodules
+```
+brew install hugo asciidoctor
+```
 
+## Submodules
+
+After pulling from a different computer, you have to re-clone the submodules.
+
+    rm -rf public
+    rm -rf themes/hugo-PaperMod
+    git clone https://github.com/chuck-alt-delete/chuck-alt-delete.github.io.git public
+    git clone https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod
+
+Update submodules.
 ```bash
 git submodule foreach git pull
 ```
-
-Note: After pulling from a different computer, I had an issue with the submodule in the `public` folder, so I deleted that folder and ran 
-
-    git clone https://github.com/chuck-alt-delete/chuck-alt-delete.github.io.git public
-
-That seemed to work.
 
 # New Post
 
