@@ -10,7 +10,20 @@ This page displays exemplars of my work.
 Any of this content may have been modified or deleted since being recorded here.
 {{< /note >}}
 
-## Field Engineering Assets
+## Kafka Community Spotlight
+
+I was featured on Stanislav Kozlovski's Kafka Community Spotlight:
+- https://topicpartition.io/kafka/community/chuck-larrieu-casias
+
+## Conduktor Assets
+
+As a Senior Solutions Architect at Conduktor, I partner with some of our largest enterprise customers to scale, secure, share, and govern their real-time data using Conduktor technologies. Here are a couple of public assets I can highlight:
+
+- I wrote an opinionated [https://github.com/conduktor/self-service-template](template repo) to make it easier for customers to adopt Conduktor's Kafka gitops framework known as Conduktor Federated Ownership.
+- I created a [https://github.com/conduktor/conduktor-gateway-kubernetes-tutorial](Kubernetes tutorial) to help customers deploy Conduktor's Kafka proxy into their kubernetes environments with proper SNI routing.
+- I developed [hands-on Conduktor workshops](https://www.conduktor.io/events/webinars/simplifying-kafka-on-aws-msk) in collaboration with AWS MSK to train customers and prospects on how to effectively use Conduktor's Kafka proxy.
+
+## Materialize Assets
 
 As a Field Engineer at Materialize, I help folks find success using Materialize, a Postgres-compatible operational data warehouse that incrementally materializes and serves even the most complex joins and aggregations, always up-to-date. Here are a couple of assets to highlight:
 
@@ -29,7 +42,7 @@ As a Field Engineer at Materialize, I help folks find success using Materialize,
 
 Outisde of these publicly available assets, I have several custom solutions I've built for specific customers as well as demos.
 
-## Technical Marketing Assets
+## Confluent Technical Marketing Assets
 
 As a Technical Marketing Manager at Confluent, I create and review blogs, whitepapers, demos, and videos. Here are a couple of assets to highlight:
 
@@ -52,7 +65,7 @@ As a Technical Marketing Manager at Confluent, I create and review blogs, whitep
   - [Demo repo](https://github.com/confluentinc/demo-trust)
   - [Video](https://www.confluent.io/resources/online-talk/trusted-data-streaming-with-confluent-cloud/)
 
-## Courses 
+## Confluent Courses 
 
 As a Senior Curriculum Developer at [Confluent](https://www.confluent.io), I have written many courses related distributed systems, databases, and stream processing. I'll highlight two courses here. Sign up for the [free self-paced courses](https://training.confluent.io/packagedetail/confluent-education-free-self-paced) and then check out:
 
@@ -78,4 +91,4 @@ While I enjoy solving coding puzzles for fun, I have significant anxiety when do
 Here are some links to dozens of data structure and algorithm style coding puzzles that I've done. I mostly like to do them in Python, but I'm conversant in Java, Go, and Javascript as well. Ask me to explain any of the solutions and I'll happily get into recursion, depth first search, breadth first search, topological sort, quicksort, mergesort, dynamic programming, regular expressions, hashmaps, arrays, trees, generators, minheaps, queues, stacks, functional programming, object oriented programming, whatever other nerdy things you'd like to talk about.
 
 - https://github.com/chuckinator0/Projects/tree/master/scripts
-- https://github.com/chuck-alt-delete/exercism/tree/main/python
+- https://github.com/chuck-alt-delete/exercism/tree/main/

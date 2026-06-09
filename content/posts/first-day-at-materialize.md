@@ -6,7 +6,11 @@ draft: false
 
 Every so often, I decide to turn my life upside down. A bit over a week ago, I made this announcement:
 
-<div align="center">{{< tweet user="MrLarrieu" id="1584594310585991168" >}}</div>
+<div align="center">
+
+[📢 My announcement tweet (@MrLarrieu)](https://twitter.com/MrLarrieu/status/1584594310585991168)
+
+</div>
 
 But why leave a great company (which, by the way, just beat expectations for the [6th consecutive quarter](https://investors.confluent.io/news-releases/news-release-details/confluent-announces-third-quarter-2022-financial-results), despite the recession)?
 
@@ -86,11 +90,23 @@ The competitive landscape for databases is tough, so Materialize had better have
 
 ### Fun Threads Where I Learned a Lot About Materialize
 
-<div align="center">{{< tweet user="MrLarrieu" id="1572738521366147072" >}}</div>
+<div align="center">
 
-<div align="center">{{< tweet user="dunithd" id="1557626408234622976" >}}</div>
+[🧵 Thread by @MrLarrieu](https://twitter.com/MrLarrieu/status/1572738521366147072)
 
-<div align="center">{{< tweet user="MrLarrieu" id="1580995193045536769" >}}</div>
+</div>
+
+<div align="center">
+
+[🧵 Thread by @dunithd](https://twitter.com/dunithd/status/1557626408234622976)
+
+</div>
+
+<div align="center">
+
+[🧵 Thread by @MrLarrieu](https://twitter.com/MrLarrieu/status/1580995193045536769)
+
+</div>
 
 ### Questions I'm Curious to Research
 
