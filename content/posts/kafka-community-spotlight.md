@@ -15,7 +15,7 @@ I will copy the contents here for posterity.
 ### Please tell us about yourself, and where you are from.
 
 I’m Chuck 👋🏻 (in the middle)
-![meme](/images/8-Chuck-Larrieu-Casias.jpg)
+![chuck](/images/8-Chuck-Larrieu-Casias.jpg)
 
 Chuck Larrieu Casias
 I’m originally from Sonoma, California. I’ve moved around different parts of the US, but I’ve settled in Oregon and I hope to stay here for a long time.
